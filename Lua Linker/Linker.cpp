@@ -1,7 +1,6 @@
 #include "Linker.h"
 
-bool Linker::Link(const fs::path &folderPath)
-{
+bool Linker::Link(const fs::path &folderPath) {
 	const std::ifstream entryFile{ folderPath / "main.lua" };
 
 	if (!entryFile) {
